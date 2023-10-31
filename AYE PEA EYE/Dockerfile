@@ -14,7 +14,7 @@ WORKDIR "/src/AYE PEA EYE"
 RUN dotnet build "AYE PEA EYE.csproj" -c Release -o /app/build
 
 # Generate the developer certificate
-RUN dotnet dev-certs https
+RUN dotnet dev-certs https --trust
 
 FROM build AS publish
 RUN dotnet publish "AYE PEA EYE.csproj" -c Release -o /app/publish /p:UseAppHost=false
