@@ -26,5 +26,14 @@ namespace AYE_PEA_EYE.Controllers
             return Ok(customerList);
         }
 
+        [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        public IActionResult CreateCustomer([FromForm] Customers customer)
+        {
+            _customerService.CreateCustomer(customer.FirstName, customer.LastName, customer.Email);
+
+            return Ok();
+        }
+
     }
 }

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AYE PEA EYE", "AYE PEA EYE\AYE PEA EYE.csproj", "{462DB9FC-C6F3-4C13-9747-FF5F1D212CEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AYE PEA EYE", "AYE PEA EYE\AYE PEA EYE.csproj", "{462DB9FC-C6F3-4C13-9747-FF5F1D212CEA}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{331C3A2D-6F7E-4F82-B2A3-6EFC7A2A6E04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{462DB9FC-C6F3-4C13-9747-FF5F1D212CEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{462DB9FC-C6F3-4C13-9747-FF5F1D212CEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{462DB9FC-C6F3-4C13-9747-FF5F1D212CEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{331C3A2D-6F7E-4F82-B2A3-6EFC7A2A6E04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{331C3A2D-6F7E-4F82-B2A3-6EFC7A2A6E04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{331C3A2D-6F7E-4F82-B2A3-6EFC7A2A6E04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{331C3A2D-6F7E-4F82-B2A3-6EFC7A2A6E04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

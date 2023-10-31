@@ -7,6 +7,7 @@
     <RootNamespace>AYE_PEA_EYE</RootNamespace>
     <UserSecretsId>7a2435aa-7ebf-417c-8c51-56cb2f3b0325</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>

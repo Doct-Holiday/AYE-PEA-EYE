@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  ayepeaeye:
+    image: ${DOCKER_REGISTRY-}ayepeaeye
+    build:
+      context: .
+      dockerfile: AYE PEA EYE/Dockerfile
+    depends_on:
+        - ms-sql-server
+    ports:
+        - "8080:80"
+
+  ms-sql-server:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+        ACCEPT_EULA: "Y"
+        MSSQL_SA_PASSWORD: "p0k3mon!12"
+    ports:
+        - "1433:1433"
