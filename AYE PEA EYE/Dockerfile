@@ -5,6 +5,9 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
+# Generate the developer certificate
+RUN dotnet dev-certs https
+
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["AYE PEA EYE/AYE PEA EYE.csproj", "AYE PEA EYE/"]
