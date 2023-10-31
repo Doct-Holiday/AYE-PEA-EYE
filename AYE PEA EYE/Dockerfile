@@ -5,9 +5,6 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-# Generate the developer certificate
-RUN dotnet dev-certs https
-
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["AYE PEA EYE/AYE PEA EYE.csproj", "AYE PEA EYE/"]
@@ -15,6 +12,9 @@ RUN dotnet restore "AYE PEA EYE/AYE PEA EYE.csproj"
 COPY . .
 WORKDIR "/src/AYE PEA EYE"
 RUN dotnet build "AYE PEA EYE.csproj" -c Release -o /app/build
+
+# Generate the developer certificate
+RUN dotnet dev-certs https
 
 FROM build AS publish
 RUN dotnet publish "AYE PEA EYE.csproj" -c Release -o /app/publish /p:UseAppHost=false
